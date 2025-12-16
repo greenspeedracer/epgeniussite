@@ -15,7 +15,7 @@ https://repo-server.site/
             box-sizing: border-box;
         }
 
-        :root {
+        /* :root {
             --primary-grey: #e5e7eb;
             --primary-orange: #f97316;
             --primary-purple: #7c3aed;
@@ -28,6 +28,21 @@ https://repo-server.site/
             --text-secondary: #ffffff;
             --primary-cyan: #00ffff;
             --primary-pink: #ff00ff;
+        } */
+        
+        :root {
+            --primary-grey: #e5e7eb;
+            --primary-orange: #ff4500;      /* orange-red */
+            --primary-purple: #dc2626;      /* deep red */
+            --secondary-amber: #e8d4bf;     /* light tan/cream */
+            --dark-bg: #1a0f0a;             /* dark brown */
+            --darker-bg: #0f0805;           /* almost black brown */
+            --card-bg: rgba(232, 212, 191, 0.03);
+            --border-color: rgba(232, 212, 191, 0.2);
+            --text-primary: #ffffff;
+            --text-secondary: #e8d4bf;      /* cream text */
+            --primary-cyan: #e8d4bf;        /* cream replaces cyan */
+            --primary-pink: #ff4500;        /* orange-red replaces pink */
         }
 
         body {
@@ -1089,7 +1104,7 @@ https://repo-server.site/
 
         .playlist-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 255, 255, 0.2);
         }
 
         .playlist-card:hover::before {
