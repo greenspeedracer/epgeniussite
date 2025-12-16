@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPGenius - A Curated Lists and EPG Repository</title>
+    <link href="EPGenius.css" rel="stylesheet">
+<!--
+
+EPGenius
+
+https://repo-server.site/
+
+-->
+</head>
+<body id="top">
+    <!-- Enhanced Background Elements -->
+    <div class="cyber-bg">
+        <div class="cyber-gradient"></div>
+        <div class="matrix-rain" id="matrixRain"></div>
+    </div>
+    
+    <div class="particles" id="particlesContainer"></div>
+    
+    <div class="data-streams" id="dataStreams"></div>
+    
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    
+    <div class="grid-overlay">
+        <div class="grid-lines"></div>
+        <div class="grid-glow"></div>
+    </div>
+    
+    <div class="scanlines"></div>
+    <div class="noise-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#top" class="logo"><img src ="EPGCube.gif" width="50px" height="50px"></a>
+            <ul class="nav-links">
+                <li><a href="#" data-tab="playlists" class="nav-tab active">Choose a Playlist</a></li>
+                <li><a href="#" data-tab="creators" class="nav-tab">Share Your Playlist</a></li>
+                <li><a href="#" data-tab="credentials" class="nav-tab">Edit Your Credentials</a></li>
+            </ul>
+            <div class="nav-bottom">
+                <a href="https://discord.gg/pZwcncweFc" class="cyber-button"target="_blank">Discord</a>
+            </div>
+            <button class="mobile-menu-button" id="mobileMenuBtn">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#top" class="mobile-menu-logo">EPGenius</a>
+            <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+        </div>
+        <div class="mobile-menu-cta">
+            <a href="https://discord.gg/pZwcncweFc" class="cyber-button"target="_blank">Discord</a>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="#" data-tab="playlists" class="nav-tab active">Choose a Playlist</a></li>
+                <li><a href="#" data-tab="creators" class="nav-tab">Share Your Playlist</a></li>
+                <li><a href="#" data-tab="credentials" class="nav-tab">Edit Your Credentials</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                <span class="hero-ep">EP</span><span class="hero-genius">Genius</span>
+            </h1>
+            <p class="hero-subtitle">CURATED PLAYLISTS MADE EASY</p>	
+    
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">34</span>
+                    <span class="stat-label">Playlists</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Providers Covered</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">46220</span>
+                    <span class="stat-label">Downloads</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">27</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Playlists Section -->
+    <section class="tab-content active" id="playlists">
+        <div class="playlists-container">
+            <div class="section-header">
+                <h2 class="section-title">Playlists</h2>
+                <p class="section-subtitle">PICK THE LIST THAT FEELS RIGHT FOR YOU</p>
+            </div>
+            
+            <div class="playlists-grid">
+              <div class="playlist-card">
+                <h3>#1 ferteque — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">Spain</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Football and TV</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">05/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">2277</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="playlist-card">
+                <h3>#2 jams — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">United States, Canada (Sports &amp; Local Channels), United Kingdom (Sports)</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Live TV; Major Sports; RSN's; PPV; Local Channels; 24/7; Free Sports/PPV auto-updater, ensuring EPG is always up to date</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">07/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">6864</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#4 edsanchez — Eagle 4k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">US; CAN</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Sports; Entertainment; Local</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">12/06/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">1253</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#5 N/A — Mega</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">United States</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">General; Sports</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">28/03/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">760</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#6 GanjaRelease — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">United States, United Kingdom, Canada, Australia</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">TV Guide (USA, UK, AU, Canada), NFL, NCAA, NBA, NHL, EPL, &amp; more. Live TV, Updated Daily!</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">08/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">19039</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#7 SouthwestBudz — Trex</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">U.S.</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">TV Guide; News; Sports; Movies; TV Shows; 24/7 Streams;</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">03/04/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">1630</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#8 GanjaRelease — Lion</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">USA &amp; UK</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">TV Guide, Sports, Kids, NFL, NBA, MLB, NHL, Football, 24/7, Adult 18+</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">14/09/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">990</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#9 GanjaRelease — Trex</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">USA</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">TV Guide (USA) NFL, NBA, MLB, College Football &amp; Basketball, Sky Sports, TNT Sports &amp; More</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">07/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">2502</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#10 N/A — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">UK; IE; US; CA; AU; NZ</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Same as source</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">13/05/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">1908</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#11 smaugdmd — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">Belgium (TV &amp; Sports); UK (TV &amp; Sports); Netherlands (TV &amp; Sports); Australia, Canada, Ireland, United States, Hong Kong (Sports)</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">General TV &amp; Sports (Flemish, UK, IE, AU, CA, US, BE, NL, HK); Catch-up; PPV categories</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">09/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">776</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#12 thedoobles — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">Us uk can mxc</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Sports; entertainment; locals; movies; shows</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">10/05/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">580</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#13 Ferteque — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">Brasil</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Sports, Entertainment, Big Brother, Documentarios, Kids...</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">21/05/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">408</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#14 tropaz — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">Ireland, UK, USA, Sports</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Ireland,UK &amp; USA TV, UK and USA Sport, Irish Sports (GAA GO, League of Ireland, etc)</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">04/08/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">620</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#15 tropaz — Trex</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">Ireland, UK, USA, Sports</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Ireland,UK &amp; USA TV, UK and USA Sport, Irish Sports (GAA GO, League of Ireland, etc)</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">14/09/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">699</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#16 CorB3n — Eagle 4k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">France</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Organisation MyCANAL : Chaines TNT; Chaines C+; Cinéma; Séries; Sports; UHD HDR; etc…</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">20/09/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">192</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#17 OldJob8069 — B1G</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">Ireland &amp; UK</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Ent, Movies, Docs, Music, Kids, News, Sport (Soccer Focused)</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">30/05/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">340</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#18 CorB3n — Trex</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">France</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">MyCANAL mimic : Live TV; Chaines C+; Cinéma; Séries; Sports; Divertissement; Découverte; Jeunesse; Nouvelle génération; Information; Musique; M. Classique; C+ Live / BeIN / Eurosport ; DaZN</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">26/06/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">122</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#19 AMMAR — Strong 8k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">UK,IT,DE,FR,NL,AR,HK,GR,CZ,NO,PL,PT,SE,ES,US,BE,BG,SR,CA,AU,IS,MY</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">All channels from these countries in 4K or Full HD 50 fps (football only).</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">22/09/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">1972</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#20 GanjaRelease — Strong 8K (NO VOD)</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">United States, United Kingdom, Canada, Australia</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Same as List #6, but without Movies or TV Series. Live TV Only. Faster updates</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">08/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">2343</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#21 NewEraSCTV — STRONG8K</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">US Only - Most Accurate/Best Logos</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Locals, Entertainment, Movies, Sports, PPV, some AED</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">08/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">426</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#23 JayNowa — Trex</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">USA</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">TV, News, Locals, Kids, Sports, PPV, NBA, MLB, NFL, MLS, MiLB, Prime, DAZN, Tennis</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">27/08/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">237</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#24 NewEraSCTV — STRONG8K</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">US CA - Most Accurate/Best Logos</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Locals, Entertainment, Movies, Sports, PPV, some AED</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">09/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">68</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#25 NewEraSCTV — STRONG8K</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">US CA UK - Most Accurate/Best Logos</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Locals, Entertainment, Movies, Sports, SKY, TNT, PPV, some AED</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">09/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">182</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#26 NewEraSCTV — TREX</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">US Only</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Locals, Entertainment, Movies, Sports, PPV, some AED</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">10/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">115</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#27 NewEraSCTV — STRONG8K</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">ALL English - US CA UK AU IE NZ - Most Accurate/Best Logos</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Locals, Entertainment, Movies, Sports, SKY, TNT, PPV, some AED</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">10/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">78</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#28 z06tim — Eagle4k/Dream4k</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">US, CA, UK</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Entertainment, Sports, PPV</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">09/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">94</div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="playlist-card">
+                <h3>#29 z06tim — B1G</h3>
+                <ul class="plan-playlists">
+                    <li>
+                        <div class="label">Countries</div>
+                        <div class="value limited-text">US, CA, UK</div>
+                    </li>
+                    <li>
+                        <div class="label">Categories</div>
+                        <div class="value limited-text">Entertainment, Sports, PPV</div>
+                    </li>
+                    <li>
+                        <div class="label">Last Updated</div>
+                        <div class="value">09/10/2025</div>
+                    </li>
+                    <li>
+                        <div class="label">Downloads</div>
+                        <div class="value">20</div>
+                    </li>
+                </ul>
+                
+            </div>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Playlist Modal structure -->
+    <div id="playlistModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Choose an Option</h3>
+            </div>
+            <div class="modal-body">
+                <div class="button-container">
+                    <button class="modal-button">Automatic</button>
+                    <button class="modal-button">Manual</button>
+                    <button class="modal-button">Donate ❤️</button>
+                    <button class="modal-button">Preview List + EPG</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Playlist Creators Section -->
+    <section class="tab-content" id="creators">
+        <div class="creators-container">
+            <div class="section-header">
+                <h2 class="section-title">Playlist Creators</h2>
+                <p class="section-subtitle">SELECT ONE OF THE NEXT OPTIONS!</p>
+            </div>
+            
+            <div class="creators-grid">
+                <div class="creators-card">
+                    <a class="btn-secondary" id="sharePlaylistBtn">SHARE A NEW PLAYLIST</a>
+                </div>
+                <div class="creators-card">
+                    <a class="btn-secondary" id="updatePlaylistBtn">UPDATE ALREADY SHARED PLAYLIST</a>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Modal Popup for Sharing a New Playlist -->
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>SHARE A NEW PLAYLIST</h3>
+                <p class="section-subtitle">⚠️ HEADS UP: THIS SECTION IS NOT FOR GETTING YOUR M3U FILE. IT'S MEANT FOR USERS WHO HAVE CURATED THEIR OWN PLAYLIST AND WISH TO SHARE IT WITH THE COMMUNITY.</p>
+            </div>
+            <div class="modal-body">
+                <form id="shareServiceForm">
+                    <div class="form-group">
+                        <label for="serviceName">Service Name</label>
+                        <input type="text" id="serviceName" name="serviceName" placeholder="ENTER SERVICE NAME" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="countries">Countries</label>
+                        <input type="text" id="countries" name="countries" placeholder="ENTER COUNTRIES" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="discordUsername">Discord Username</label>
+                        <input type="text" id="discordUsername" name="discordUsername" placeholder="ENTER DISCORD USERNAME" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mainCategories">Main Categories</label>
+                        <input type="text" id="mainCategories" name="mainCategories" placeholder="ENTER MAIN CATEGORIES" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="epgUrl">EPG URL</label>
+                        <input type="url" id="epgUrl" name="epgUrl" placeholder="ENTER EPG URL" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donationLink">Donation Link</label>
+                        <input type="url" id="donationLink" name="donationLink" placeholder="ENTER DONATION LINK" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="listPassword">List Password</label>
+                        <input type="password" id="listPassword" name="listPassword" placeholder="ENTER LIST PASSWORD" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="m3uFile">Upload M3U File</label>
+                        <input type="file" id="m3uFile" name="m3uFile" accept=".m3u" required>
+                    </div>
+                    <!-- VOD Checkbox -->
+    <div class="form-group vod-checkbox-group">
+        <label for="vodCheckbox">VOD</label>
+        <label>
+            <input type="checkbox" id="vodCheckbox" name="vodCheckbox">
+            <span class="checkbox-custom"></span>
+        </label>
+    </div>
+
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup for Updating an Already Shared Playlist -->
+    <div id="updatePopupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>UPDATE ALREADY SHARED PLAYLIST</h3>
+                <p class="section-subtitle">⚠️ HEADS UP: THIS SECTION IS NOT FOR GETTING YOUR M3U FILE. IT'S MEANT FOR USERS WHO HAVE CURATED THEIR OWN PLAYLIST AND WISH TO SHARE IT WITH THE COMMUNITY.</p>
+            </div>
+          <div class="modal-body">
+    <form id="shareServiceForm">
+        <div class="form-group">
+            <label for="playlistId">Playlist ID *</label>
+            <input type="text" id="playlistId" name="playlistId" placeholder="ENTER PLAYLIST ID" required>
+        </div>
+
+        <div class="form-group">
+            <label for="listPassword">List Password *</label>
+            <input type="password" id="listPassword" name="listPassword" placeholder="ENTER LIST PASSWORD" required>
+        </div>
+
+        <div class="form-group">
+            <label for="newCountries">New Countries</label>
+            <input type="text" id="newCountries" name="newCountries" placeholder="LEAVE BLANK IF THERE ARE NO NEW COUNTRIES">
+        </div>
+
+        <div class="form-group">
+            <label for="newCategories">New Categories</label>
+            <input type="text" id="newCategories" name="newCategories" placeholder="LEAVE BLANK IF THERE ARE NO NEW CATEGORIES">
+        </div>
+
+        <div class="form-group">
+            <label for="newEpgUrl">New EPG URL</label>
+            <input type="url" id="newEpgUrl" name="newEpgUrl" placeholder="LEAVE BLANK IF THERE IS NO NEW EPG">
+        </div>
+
+        <div class="form-group">
+            <label for="newDonationLink">New Donation Link</label>
+            <input type="url" id="newDonationLink" name="newDonationLink" placeholder="LEAVE BLANK IF THERE IS NO NEW LINK">
+        </div>
+
+        <div class="form-group">
+            <label for="newM3uFile">Upload New M3U File *</label>
+            <input type="file" id="newM3uFile" name="newM3uFile" accept=".m3u" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Update Playlist</button>
+    </form>
+</div>
+
+        </div>
+    </div>
+
+    <!-- Credentials Edit Section -->
+    <section class="tab-content" id="credentials">
+        <div class="credentials-container">
+            <div class="section-header">
+                <h2 class="section-title">Credentials Edit</h2>
+                <p class="section-subtitle">THIS SECTION IS NOT FOR GETTING YOUR M3U FILE. IT'S MEANT FOR USERS WHO ALREADY HAVE A GOOGLE DRIVE FILE GENERATED AND WISH TO UPDATE THE CREDENTIALS IN IT.</p>
+            </div>
+            
+        <div class="credentials-form-wrapper">
+        <div class="credentials-form">
+        <!-- DNS Server URL -->
+        <div class="form-group">
+            <label for="dns-server-url">DNS SERVER URL:</label>
+            <input type="text" id="dns-server-url" name="dns-server-url" placeholder="ENTER YOUR DNS OR SERVER OR URL" required>
+        </div>
+        
+        <!-- Username -->
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="ENTER YOUR USERNAME" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword" name="password" placeholder="ENTER YOUR PASSWORD" required>
+        </div>
+        
+        <!-- Google Drive File ID -->
+        <div class="form-group">
+            <label for="google-file-id">GOOGLE DRIVE FILE ID:</label>
+            <textarea id="google-file-id" name="google-file-id" rows="5" placeholder="ENTER YOUR GOOGLE DRIVE FILE ID" required></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit" class="btn-primary btn-submit">Submit Credentials</button>
+        </div>
+    </div>
+</div>
+</section>
+
+    <!-- Disclaimer Section -->
+<section class="disclaimer" id="disclaimer">
+    <div class="disclaimer-container">
+        <p class="disclaimer-text">
+        This tool provides pre-configured M3U templates for personal use only. 
+        We do not store, provide, or promote access to copyrighted content.<br> 
+        By using this service, you confirm you are authorized to access the content associated with your credentials.
+        Playlists are non-functional without user-provided credentials from a legitimate provider.
+        </p>
+    </div>
+</section> 
+
+<!-- Footer -->
+<!-- <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <span class="footer-separator">|</span>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EPGenius</p>
+            <p class="footer-credit">Brought to you by <a href="https://repo-server.site/" target="_blank" rel="noopener noreferrer">EPGenius</a></p>
+        </div>
+    </div>
+</footer> -->
+
+    <script src="EPGeniusScripts.js"></script>
+</body>
+
+</html>
