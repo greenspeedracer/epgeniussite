@@ -240,7 +240,7 @@ document.addEventListener('mousemove', (e) => {
 
                     if (distance < 150) {
                         const brightness = 1 - (distance / 150);
-                        particle.style.boxShadow = `0 0 ${20 + brightness * 30}px rgba(0, 255, 255, ${0.5 + brightness * 0.5})`;
+                        particle.style.boxShadow = `0 0 ${20 + brightness * 30}px rgba(232, 212, 191, ${0.5 + brightness * 0.5})`;
                         particle.style.transform = `scale(${1 + brightness * 0.5})`;
                     } else {
                         particle.style.boxShadow = '';
@@ -283,10 +283,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     if (window.scrollY > 100) {
-        nav.style.background = 'rgba(15, 15, 35, 0.95)';
-        nav.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.2)';
+        nav.style.background = 'rgba(15, 8, 5, 0.95)';
+        nav.style.boxShadow = '0 0 30px rgba(232, 212, 191, 0.2)';
     } else {
-        nav.style.background = 'rgba(15, 15, 35, 0.9)';
+        nav.style.background = 'rgba(15, 8, 5, 0.9)';
         nav.style.boxShadow = 'none';
     }
 });
@@ -312,7 +312,7 @@ document.querySelectorAll('.fade-up').forEach(el => {
 // Button effects
 document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
     button.addEventListener('mouseenter', function() {
-        this.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.6)';
+        this.style.boxShadow = '0 0 30px rgba(232, 212, 191, 0.6)';
     });
 
     button.addEventListener('mouseleave', function() {
