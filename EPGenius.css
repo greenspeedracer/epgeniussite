@@ -35,6 +35,7 @@ https://repo-server.site/
             --primary-orange: #ff4500;      /* orange-red */
             --primary-purple: #dc2626;      /* deep red */
             --secondary-amber: #e8d4bf;     /* light tan/cream */
+            --accent-gold: #c9a86a;         /* NEW - muted gold/bronze */
             --dark-bg: #1a0f0a;             /* dark brown */
             --darker-bg: #0f0805;           /* almost black brown */
             --card-bg: rgba(232, 212, 191, 0.03);
@@ -1118,7 +1119,7 @@ https://repo-server.site/
         }
 
         .playlist-card {
-            background: var(--card-bg);
+            background: rgba(10, 10, 10, 0.6);  /* much darker */
             border: 1px solid var(--border-color);
             padding: 0;  /* remove padding, add it to sections instead */
             position: relative;
@@ -1222,7 +1223,7 @@ https://repo-server.site/
 
         .label {
             font-weight: 800;
-            color: var(--primary-cyan);
+            color: var(--accent-gold);
             margin-bottom: 4px;
             font-size: 0.9rem;
             text-decoration: underline;
